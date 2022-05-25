@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-        Eduzenship|A True Professional Consultancy Firm
+        Eduzenship | A True Professional Consultancy Firm
 @endsection
 
 @section('contents')
@@ -11,50 +11,20 @@
 <!--======Hero Slider Section Starts=======-->
 <section id="hero">
     <div id="hero-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#hero-carousel" data-slide-to="1"></li>
-            <li data-target="#hero-carousel" data-slide-to="2"></li>
-            <li data-target="#hero-carousel" data-slide-to="3"></li>
-            <li data-target="#hero-carousel" data-slide-to="4"></li>
-        </ol>
         <div class="carousel-inner hero-item">
-            <div class="carousel-item active" style="background-image:url({{asset('frontend/images/slider-main/bg1.jpg')}})">
-                <div class="carousel-caption">
-                    <h2 class="animated fadeInLeft">Dreams</h2>
-                    <p class="animated fadeInUp">Start Your Dream of Achieving Something Precious</p>
-                    <p class="animated fadeInUp"><a href="{{url('/contact')}}" class="btn hero-btn-transparent hero-btn-rounded hero-btn-large">Learn More</a></p>
-                </div>
+            @php
+                $i = 1;
+            @endphp
+            @foreach ($sliders as $slider)
+            <div class="carousel-item {{$i == 1 ? 'active': ''}}" style="background-image:url({{asset('/images/sliders/'.$slider->image)}})">
+            @php
+                $i++;
+            @endphp
             </div>
-            <div class="carousel-item" style="background-image:url({{asset('frontend/images/slider-main/bg2.jpg')}})">
-                <div class="carousel-caption">
-                    <h2 class="animated fadeInDown">Seek Experts</h2>
-                    <p class="animated fadeInUp">Experience The World Through The Words of Experts</p>
-                    <p class="animated fadeInUp"><a href="{{url('/contact')}}" class="btn hero-btn-transparent hero-btn-rounded hero-btn-large">Learn More</a></p>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image:url({{asset('frontend/images/slider-main/bg3.jpg')}})">
-                <div class="carousel-caption">
-                    <h2 class="animated fadeInRight">Set Goal</h2>
-                    <p class="animated fadeInRight">Start Running Towards Your Dream</p>
-                    <p class="animated fadeInRight"><a href="{{url('/contact')}}" class="btn hero-btn-transparent hero-btn-rounded hero-btn-large">Learn More</a></p>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image:url({{asset('frontend/images/slider-main/bg4.jpg')}})">
-                <div class="carousel-caption">
-                    <h2 class="animated fadeInRight">Learn</h2>
-                    <p class="animated fadeInRight">Start Learning With The Knowlegde You Gathered</p>
-                    <p class="animated fadeInRight"><a href="{{url('/contact')}}" class="btn hero-btn-transparent hero-btn-rounded hero-btn-large">Learn More</a></p>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image:url({{asset('frontend/images/slider-main/bg5.jpg')}})">
-                <div class="carousel-caption">
-                    <h2 class="animated fadeInRight">Final Light</h2>
-                    <p class="animated fadeInRight">Finally See The Light You Desired</p>
-                    <p class="animated fadeInRight"><a href="{{url('/contact')}}" class="btn hero-btn-transparent hero-btn-rounded hero-btn-large">Learn More</a></p>
-                </div>
-            </div>
+            @endforeach
+           
         </div>
+           
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -73,53 +43,134 @@
 <section class="call-to-action-box no-padding text-center text-light">
     <div class="container">
         <div class="action-style-box" data-aos="flip-up" data-aos-duration="1000">
-            <div class="row item align-items-center">
-                <div class="card-wrapper col-lg-3 col-md-6 col-xs-12">
-                    <div class="card">
-                        <div class="card-icon-wrapper" style="font-size: 50px;">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Admission Counselling</h4>
-                            <div class="card-content">
-                                <p class="card-text">Admission counseling is the first and most important step leading to a proper gateway to career counseling</p>
+            <div class="row align-items-center">
+
+                <div class="contain">
+                    <div id="owl-carousel" class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Guidance</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card-wrapper col-lg-3 col-md-6 col-xs-12">
-                    <div class="card">
-                        <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-home"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Accomodation</h4>
-                            <div class="card-content">
-                                <p class="card-text">It is common for your institute to offer help or support especially when it comes to university accommodation partially hazed on personal budget and preference.</p>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-flag"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Country Information</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card-wrapper col-lg-3 col-md-6 col-xs-12">
-                    <div class="card">
-                        <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-award"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Sholarships Counselling</h4>
-                            <div class="card-content">
-                                <p class="card-text">Sholarships are a way of funding students for their livelihood and academic needs. Organizations tend to sponsor students who are not easily distracted</p>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-list"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Selection Of Course</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card-wrapper col-lg-3 col-md-6 col-xs-12">
-                    <div class="card">
-                        <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-book-reader"></i></div>
-                        <div class="card-body">
-                            <h4 class="card-title">Travel Assistance</h4>
-                            <div class="card-content">
-                                <p class="card-text">Our aim is to guide students with whole process of studying abroad through our coaching classes where they will be lead by experts</p>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-archway"></i></div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Admission Pathway</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-home"></i></div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Accomodation Guidance</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-car"></i></div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Travel Aboard</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-user-shield"></i></div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Safety</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-icon-wrapper" style="font-size: 50px;"><i class="fas fa-award"></i></div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Scholarships</h4>
+                                    <div class="card-content">
+                                        <p class="card-text">
+                                            <a href="{{url('/our-offerings')}}" class="about__button_two">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
 
@@ -152,7 +203,7 @@
                         <div class="about__title">About Us
                         </div>
                         <div class="underline-white"></div>
-                        <div class="about__text">Eduzenship, we are a leading overseas education consulting company in Bangladesh and have a leading role in global education opportunities. Our core activity is to assist students in making the right choices for education in overseas educational institutions"... </div>
+                        <div class="about__text">Quality has been one of the most important factors for Eduzenship. At no point of time, we compromise with the quality of the services we render. Guidance is often regarded as an integral part of education therefore; we at Eduzenship provide students with all the required guidance.... </div>
                         <a href="{{url('/about')}}" class="about__button">Learn More</a>
                     </div>
                 </div>
@@ -175,7 +226,7 @@
                 <div class="underline-white"></div>
                 <div class="row text-center">
                     <div class="col-md-4 col-sm-6 col-xs-6 pb-5 ts-offers">
-                        <h2 style="font-size: 50px;"><i class="fas fa-map-signs"></i></h2>
+                        <h2 style="font-size: 50px;"><i class="fa fa-list-alt" aria-hidden="true"></i></h2>
                         <div class="ts-offers-content">
                             <h3 class="ts-offers-title">Plan</h3>
                         </div>
@@ -184,7 +235,7 @@
 
                     <div class="col-md-4 col-sm-6 pb-5 col-xs-6 ts-offers">
                         <div class="ts-offers-content">
-                            <h2 style="font-size: 50px;"><i class="fas fa-map-marked-alt"></i></h2>
+                            <h2 style="font-size: 50px;"><i class="fa fa-map-marker" aria-hidden="true"></i></h2>
                             <h3 class="ts-offers-title">Destination</h3>
                         </div>
                     </div>
@@ -214,7 +265,7 @@
                     <!-- Col end -->
 
                     <div class="col-md-4 col-sm-6 pb-5 ts-offers">
-                        <h2 style="font-size: 50px;"><i class="fas fa-phone-volume"></i></h2>
+                        <h2 style="font-size: 50px;"><i class="fa fa-headphones" aria-hidden="true"></i></h2>
                         <div class="ts-offers-content">
                             <h3 class="ts-offers-title">Support</h3>
                         </div>
@@ -348,8 +399,8 @@
 
                     <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;countries&quot;]">
                         <div class="service-img-container">
-                            <a class="gallery-popup" href="{{asset('frontend/images/services/service2.jpg')}}" aria-label="service-img">
-                                <img class="img-fluid" src="{{asset('frontend/images/services/service2.jpg')}}" alt="service-img">
+                            <a class="gallery-popup" href="{{asset('frontend/images/services/service3.jpg')}}" aria-label="service-img">
+                                <img class="img-fluid" src="{{asset('frontend/images/services/service3.jpg')}}" alt="service-img">
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
                             <div class="service-item-info">
@@ -366,8 +417,8 @@
 
                     <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;countries&quot;]">
                         <div class="service-img-container">
-                            <a class="gallery-popup" href="{{asset('frontend/images/services/service3.jpg')}}" aria-label="service-img">
-                                <img class="img-fluid" src="{{asset('frontend/images/services/service3.jpg')}}" alt="service-img">
+                            <a class="gallery-popup" href="{{asset('frontend/images/services/service2.jpg')}}" aria-label="service-img">
+                                <img class="img-fluid" src="{{asset('frontend/images/services/service2.jpg')}}" alt="service-img">
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
                             <div class="service-item-info">
@@ -384,8 +435,8 @@
 
                     <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;courses&quot;]">
                         <div class="service-img-container">
-                            <a class="gallery-popup" href="{{asset('frontend/images/services/service4.jpg')}}" aria-label="service-img">
-                                <img class="img-fluid" src="{{asset('frontend/images/services/service4.jpg')}}" alt="service-img">
+                            <a class="gallery-popup" href="{{asset('frontend/images/services/service5.jpg')}}" aria-label="service-img">
+                                <img class="img-fluid" src="{{asset('frontend/images/services/service5.jpg')}}" alt="service-img">
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
                             <div class="service-item-info">
@@ -402,8 +453,8 @@
 
                     <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;courses&quot;]">
                         <div class="service-img-container">
-                            <a class="gallery-popup" href="{{asset('frontend/images/services/service5.jpg')}}" aria-label="service-img">
-                                <img class="img-fluid" src="{{asset('frontend/images/services/service5.jpg')}}" alt="service-img">
+                            <a class="gallery-popup" href="{{asset('frontend/images/services/service4.jpg')}}" aria-label="service-img">
+                                <img class="img-fluid" src="{{asset('frontend/images/services/service4.jpg')}}" alt="service-img">
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
                             <div class="service-item-info">

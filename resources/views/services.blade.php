@@ -37,7 +37,7 @@
                 <h2>Counseling</h2>
                 <p class="summary">Our counseling department is provided by the best counselors, where clients are helped in dealing with difficulties while going abroad for studies and also helped in resolving their conscious conflicts with the focus of setting
                     goals & reaching out on a final solution. </p>
-                <a href="#" type="button" class="btn">Learn More</a>
+                <a href="{{url('/contact')}}" type="button" class="btn">Learn More</a>
             </div>
         </div>
 
@@ -51,7 +51,7 @@
                 <h2>Visa Assistance</h2>
                 <p class="summary">Generally, we assist our students to step by step with all the required documents that need to be done before his enrollment in the desired school or university. The whole process and requirement of getting students. Visa undergoes
                     some major shreds of evidence that are thoroughly scanned and certified. </p>
-                <a href="#" type="button" class="btn">Learn More</a>
+                <a href="{{url('/contact')}}" type="button" class="btn">Learn More</a>
             </div>
         </div> --}}
 
@@ -67,7 +67,7 @@
                 <h2>Scholarship Assistance</h2>
                 <p class="summary">Winning a scholarship gives you more than just a healthy bank balance. A student will get a scholarship based on academic achievement or other criteria. Otherwise, there are also opportunities of getting a full scholarship in some
                     following countries </p>
-                <a href="#" type="button" class="btn">Learn More</a>
+                <a href="{{url('/contact')}}" type="button" class="btn">Learn More</a>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
             <div class="description">
                 <h2>Travel Assistance</h2>
                 <p class="summary">Ensuring the health, security, and safety of all students is a top priority for us. For further guidance and support border essential for cross quality travel service on our shoulders.</p>
-                <a href="#" type="button" class="btn">Learn More</a>
+                <a href="{{url('/contact')}}" type="button" class="btn">Learn More</a>
             </div>
         </div>
 
@@ -95,7 +95,7 @@
             <div class="description">
                 <h2>Accommodation</h2>
                 <p class="summary">It is common for your institute to offer help or support especially when it comes to university accommodation partially hazed on personal budget and preference.</p>
-                <a href="#" type="button" class="btn">Learn More</a>
+                <a href="{{url('/contact')}}" type="button" class="btn">Learn More</a>
             </div>
         </div>
 

@@ -14,7 +14,7 @@
                         <div class="cta-text">
                             <h4 class="">Find us</h4>
                             <br>
-                            <span>The Laureate, Level #C6, House #56, Road #11, Block #F, Dhaka-1213</span>
+                            <span>The Laureate, Level #C6, House #56, Road #11, Block #F, Banani, Dhaka-1213</span>
                         </div>
                     </div>
                 </div>
@@ -61,8 +61,8 @@
                         </div>
                         <div class="footer-social-icon mb-5">
                             <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                            <a href="https://www.facebook.com/Eduzenship/"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <!--<a href="#"><i class="fab fa-instagram instagram-bg"></i></a>-->
                         </div>
                     </div>
                 </div>
@@ -78,6 +78,9 @@
                             <li><a href="{{url('/goals')}}">Goals</a></li>
                             <li><a href="{{url('/countries')}}">Countries</a></li>
                             <li><a href="{{url('/our-services')}}">Services</a></li>
+                            <li><a href="{{url('/our-offerings')}}">Offerings</a></li>
+                            <li><a href="{{url('/blogs')}}">Blogs</a></li>
+                            <li><a href="{{url('/events')}}">Events</a></li>
                             <li><a href="{{url('/contact')}}">Contact</a></li>
 
                         </ul>

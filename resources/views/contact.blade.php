@@ -19,7 +19,7 @@
                                 <div class="contact-info-text">
                                     <h2>address</h2>
                                     <span>The Laureate, Level #C6, House #56,</span>
-                                    <span>Road #11, Block #F, Dhaka-1213</span>
+                                    <span>Road #11, Block #F, Banani, Dhaka-1213</span>
                                 </div>
                             </div>
                         </div>

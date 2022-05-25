@@ -21,18 +21,10 @@
                                 </div>
                                 <div class="underline-white"></div>
                                 <div class="desc__text">
-                                    <p class="text-white">Eduzenship, we have been a leading overseas education consulting company in Bangladesh and have a leading role in global education
-                                        opportunities. Our core activity is to assist students in making the right choices for education in overseas educational institutions". Visa Consultant provides information about higher education in multiple countries
-                                        (such as the United Kingdom, the United States, Canada, Australia, New Zealand, Singapore, Ireland, France, Germany, Dubai, Switzerland, Malaysia, etc.). Our excellent branch network, connections with leading institutions
-                                        around the world, and impeccable reputation help us provide the highest quality education services.
+                                    <p class="text-white">“Quality has been one of the most important factors for Eduzenship. At no point of time, we compromise with the quality of the services we render. Guidance is often regarded as an integral part of education therefore; we at Eduzenship provide students with all the required guidance. We help them reach their goal of making a brighter future. Our core aim lies in making students interested in abroad study consultants feel comfortable. We boost confidence in them and make their admission process experience a memorable event in their life.
                                     </p>
                                     <p class="text-white">
-                                        In addition to professional academic and career consultations, Visa Consultant also provides students with a variety of high-quality services, such as ability tests, course, and university selection, simplified application process guidance and assistance,
-                                        admission assistance, visa guidance, accommodation assistance, IELTS test, TOEFL, PTE, GMAT, GRE, SAT, and ACT. We also provide bank loan assistance, travel assistance, foreign exchange assistance, medical and travel
-                                        insurance, and comprehensive pre-departure guidance. Presently Visa Consultant represents a wide portfolio of reputed international institutions & works closely with several organizations, high commissions & education
-                                        bodies. Visa Consultant in Bangladesh's Leading Overseas Education Consultancy and has helped thousands of students achieve their dreams. Although the parents of students know what they want to study and where to
-                                        study, they usually use our professional services to ensure quality and hassle-free application process so that they can focus on their academics and work.
-
+                                        All the overseas education students are assisted with their profile checks and shortlisting of universities. We make our student’s goal as our own and thus help them in getting them what they desire to achieve in their life. We stand out from the rest as we provide students a real-time experience of their target university. Thus, we follow the quality process and make every single student feel proud of their decision of overseas education. We will be more than happy to serve you. Consider us as your reliable best overseas education consultants in Dhaka and call us anytime.”
                                     </p>
 
                                 </div>

@@ -16,7 +16,7 @@
                             <div class="col-md-4">
                                 <div class="info-box">
                                     <div class="info-box-content">
-                                        <p class="info-box-subtitle"><i class="fas fa-envelope-open "></i> <a href="mailto:office@ibproconsultant.com">info@eduzenship.com</a>
+                                        <p class="info-box-subtitle"><i class="fas fa-envelope-open "></i> <a href="mailto:info@eduzenship.com">info@eduzenship.com</a>
                                         </p>
                                     </div>
                                 </div>
@@ -27,7 +27,7 @@
                                         <div class="top-social text-center">
                                             <ul class="list-unstyled">
                                                 <li>
-                                                    <a title="Facebook" class="facebook-bg" href="https://facebbok.com/">
+                                                    <a title="Facebook" class="facebook-bg" href="https://www.facebook.com/Eduzenship/">
                                                         <span class="social-icon"><i
                                                                     class="fab fa-facebook-f"></i></span>
                                                     </a>
@@ -51,7 +51,7 @@
         <!--======Header Section Ends=======-->
         <!--======Navbar Section Starts=======-->
 
-        <nav class="navbar navbar-expand-sm sticky-top">
+        <nav class="navbar navbar-expand-sm sticky-top navbar-light">
             <div class="container" >
                 <!-- <a href="/" class="navbar-brand">
                     <i class="fas fa-blog"></i> &nbsp; Blog Template
@@ -72,7 +72,7 @@
 
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item @if(Request::is('/')) active @endif">
                             <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
@@ -92,9 +92,19 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{url('/countries')}}">Countries</a>
                                 <a class="dropdown-item" href="{{url('/our-services')}}">Our Services</a>
+                                <a class="dropdown-item" href="{{url('/our-offerings')}}">Our Offerings</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Links
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{url('/blogs')}}">Blogs</a>
+                                <a class="dropdown-item" href="{{url('/events')}}">Events</a>
+                            </div>
+                        </li>
+                        <li class="nav-item @if(Request::is('/contact')) active @endif">
                             <a class="nav-link" href="{{url('/contact')}}">Contact</a>
                         </li>
                     </ul>
